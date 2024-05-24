@@ -21,6 +21,8 @@ body {
     background-color: var(--off-black);
     color: var(--white);
     height: 100vh;
+    font-family: var(--font);
+    padding-top: 200px;
 }
 
 .container {
@@ -28,16 +30,233 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 17%;
-    background-color: var(--grey);
+    text-align: center;
+    width: 22%;
+    background-color: var(--dark-grey);
     padding: 20px;
+    border-radius: 20px;
+    margin: 150px 1000px;
+    line-height: 1.5rem;
+}
+
+img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+h2 {
+    font-size: 12px;
+    color: var(--green);
+}
+
+p {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul {
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+ul a {
+    display: block;
+    padding: 10px;
+    width: 270px;
+    height: 40px;
+    color: var(--White);
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: var(--grey);
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+ul a:hover {
+    background-color: var(--green);
+    color: var(--off-black);
+    transform: scale(1.2);
 }
 
 .attribution { 
-    font-size: 11px; 
+    font-size: 14px; 
     text-align: center;
+    background-color: var(--dark-grey);
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    height: 100%;
+    padding: 35px;
+    line-height: 1.5rem;
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--green); 
+    text-decoration: none;
+}
+
+/* Extra small devices (phones, 320px and up) */
+@media (max-width: 320px) {
+    body {
+        padding-top: 100px;
+    }
+    .container {
+        width: 30%;
+        margin: 100px 10px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 16px;
+    }
+    h2, p, a {
+        font-size: 10px;
+    }
+    ul a {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+        width: 130px;
+        height: 70px;
+    }
+}
+
+/* Small devices (phones, 360px and up) */
+@media (max-width: 360px) {
+    body {
+        padding-top: 120px;
+    }
+    .container {
+        width: 90%;
+        margin: 100px 10px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    h2, p, a {
+        font-size: 10px;
+    }
+    ul a {
+        font-size: 12px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 130px;
+        height: 70px;
+    }
+}
+
+/* Large devices (larger phones, 480px and up) */
+@media (max-width: 480px) {
+    body {
+        padding-top: 150px;
+    }
+    .container {
+        width: 80%;
+        margin: 120px 20px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    h2, p, a {
+        font-size: 12px;
+    }
+    ul a {
+        font-size: 12px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 40px;
+    }
+}
+
+/* Small tablets (600px and up) */
+@media (max-width: 600px) {
+    body {
+        padding-top: 170px;
+    }
+    .container {
+        width: 70%;
+        margin: 130px 30px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2, p, a {
+        font-size: 14px;
+    }
+    ul a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Medium tablets (768px and up) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 200px;
+    }
+    .container {
+        width: 60%;
+        margin: 100px 40px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2, p, a {
+        font-size: 14px;
+    }
+    ul a {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Large tablets (1024px and up) */
+@media (max-width: 1024px) {
+    body {
+        padding-top: 200px;
+    }
+    .container {
+        width: 50%;
+        margin: 150px 50px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2, p, a {
+        font-size: 14px;
+    }
+    ul a {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
