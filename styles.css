@@ -2,10 +2,36 @@
     --green: hsl(75, 94%, 57%);
     --white: hsl(0, 0%, 100%);
     --dark-grey: hsl(0, 0%, 12%);
+    --grey: hsl(0, 0%, 20%);
     --off-black: hsl(0, 0%, 8%);
     --font: 'Inter', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--off-black);
+    color: var(--white);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 17%;
+    background-color: var(--grey);
+    padding: 20px;
+}
 
 .attribution { 
     font-size: 11px; 
